@@ -2,7 +2,8 @@
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
-  color: @syntax-text-color;
+  /*color: @syntax-text-color; */
+  color: #525252;
 
   .invisible-character {
     color: @syntax-invisible-character-color;
@@ -18,6 +19,7 @@ atom-text-editor, :host {
 
   .gutter {
     background-color: @syntax-gutter-background-color;
+    min-width: 0em;
   }
   .gutter .cursor-line {
     background-color: @syntax-gutter-background-color-selected;
@@ -360,4 +362,24 @@ atom-text-editor, :host {
   &.line.error.logfile {
     background-color: #751012;
   }
+}
+
+.scrollbars-visible-always{
+  ::-webkit-scrollbar-corner{
+    background: black;
+  }
+  
+  atom-text-editor ::-webkit-scrollbar-thumb{
+    background: grey;
+  }
+}
+
+.tree-view,
+atom-workspace,
+atom-text-editor .gutter, atom-text-editor .gutter{
+  background-color: @syntax-background-color;
+}
+
+atom-text-editor .gutter{
+  min-width: 0em;
 }
