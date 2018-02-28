@@ -1,0 +1,39 @@
+.tree-view,
+atom-workspace,
+atom-text-editor .gutter, atom-text-editor .gutter{
+  background-color: black;
+}
+.scrollbars-visible-always ::-webkit-scrollbar-corner{
+  background: black;
+}
+
+atom-text-editor, atom-text-editor{
+  color: #525252;
+}
+
+atom-text-editor .gutter{
+  min-width: 0em;
+}
+
+.scrollbars-visible-always atom-text-editor ::-webkit-scrollbar-thumb{
+  background: grey;
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-item::before,
+.list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item::before,
+.icon-file-directory::before,
+.icon-file-text::before{
+  content: none;
+}
+
+.tree-view .project-root.project-root > .header .name,
+.list-tree li.list-nested-item > .header.list-item{
+  font-weight: bold;
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li{
+  padding-left:1em;
+}
+.list-tree.has-collapsable-children li.list-item{
+  margin-left: 0em;
+}
